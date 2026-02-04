@@ -13,9 +13,18 @@ window.addEventListener("scroll", () => {
     });
 });
 
+const menuIcon = document.getElementById("Menu-icon");
+const navbar = document.querySelector(".navbar");
+
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
+};
+
+
 // Footer fade-in animation
 window.addEventListener("load", () => {
     const footer = document.querySelector(".footer");
     footer.style.opacity = "1";
     footer.style.transform = "translateY(0)";
 });
+
