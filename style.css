@@ -410,11 +410,6 @@ span {
     color: white;       /* removes auto gap */
 }
 
-
-
-
-
-
 /* project section */
 .project {
     background: var(--second-bg-color);
@@ -514,48 +509,53 @@ span {
 }
 
 /*Responsive */
+/* Tablets & Mobiles */
 @media (max-width: 768px) {
 
     html {
-        font-size: 55%;
+        font-size: 54%;
+    }
+
+    body {
+        padding-top: 90px; /* fix fixed header overlap */
     }
 
     /* Header */
     .header {
-        padding: 2rem 6%;
-    }
-
-    .navbar {
-        display: none; /* later you can add hamburger */
+        padding: 1.8rem 6%;
     }
 
     #Menu-icon {
         display: block;
     }
 
+    .navbar {
+        display: none; /* hamburger later */
+    }
+
     /* Sections */
     section {
-        padding: 8rem 6%;
+        min-height: auto;
+        padding: 7rem 6%;
     }
 
     /* Home */
     .home {
         flex-direction: column-reverse;
-        gap: 5rem;
+        gap: 4rem;
         text-align: center;
     }
 
     .home-content {
         align-items: center;
-        margin-top: 0;
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 
     .home-content h3 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .home-content p {
@@ -563,13 +563,17 @@ span {
     }
 
     .home-Img img {
-        width: 60vw;
+        width: 70vw;
         height: auto;
     }
 
-    .btn-group {
-        justify-content: center;
-        flex-wrap: wrap;
+    /* Skills */
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-box {
+        height: auto;
     }
 
     /* Education */
@@ -578,7 +582,7 @@ span {
     }
 
     .timeline-items::before {
-        left: 8px;
+        left: 10px;
     }
 
     .timeline-item {
@@ -587,36 +591,30 @@ span {
         padding-left: 30px;
     }
 
-    /* Skills */
-    .skill-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .skill-box {
-        height: auto;
-    }
-
     /* Contact */
     .contact form {
         width: 100%;
-        margin: 0;
     }
 
     /* Footer */
     .footer {
-        padding: 15px 0;
+        padding: 12px 0;
     }
 }
 
+/* Laptops */
 @media (max-width: 1024px) {
+
+    html {
+        font-size: 56%;
+    }
 
     section {
         padding: 9rem 8%;
     }
 
     .home {
-        gap: 8rem;
+        gap: 6rem;
     }
 
     .home-Img img {
@@ -624,32 +622,9 @@ span {
         height: auto;
     }
 
-    .skill-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
     .timeline-item {
-        width: 80%;
-        margin-left: 10%;
+        width: 85%;
+        margin-left: 7.5%;
     }
 }
-
-/*Responsive */
-@media (max-width: 1200px) {
-
-    html {
-        font-size: 58%;
-    }
-
-    .header {
-        padding: 3rem 8%;
-    }
-
-    section {
-        padding: 10rem 8%;
-    }
-}
-
-
-
 
