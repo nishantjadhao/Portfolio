@@ -126,7 +126,7 @@ span {
 .home-Img img {
     position: relative;
     top: 3rem;
-    width: 31vw;
+    width: 30vw;
     height: 63vh;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
@@ -535,4 +535,5 @@ span {
     transform: translateY(30px);
     transition: all 0.8s ease;
 }
+
 
