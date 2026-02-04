@@ -529,9 +529,33 @@ span {
         display: block;
     }
 
+   /* Mobile Navbar */
+@media (max-width: 768px) {
+
     .navbar {
-        display: none; /* hamburger later */
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: var(--second-bg-color);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0;
+        border-top: 1px solid var(--main-color);
     }
+
+    .navbar a {
+        margin: 1.5rem 0;
+        font-size: 2rem;
+        display: block;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
 
     /* Sections */
     section {
@@ -627,4 +651,5 @@ span {
         margin-left: 7.5%;
     }
 }
+
 
