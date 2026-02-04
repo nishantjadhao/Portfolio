@@ -126,8 +126,8 @@ span {
 .home-Img img {
     position: relative;
     top: 3rem;
-    width: 30vw;
-    height: 62vh;
+    width: 31vw;
+    height: 63vh;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
@@ -241,34 +241,6 @@ span {
     }
 }
 
-/* @keyframes words { 
-
-    0%,
-    20% {
-        content: "Frontend Designer";
-    }
-
-    21%,
-    40% {
-        content: "Web Designer";
-    }
-
-    41%,
-    60% {
-        content: "Backend Designer";
-    }
-
-    61%,
-    80% {
-        content: "MERN Stack Devloper";
-    }
-
-    81%,
-    100% {
-        content: "Web Devloper";
-    }
-} */
-
 @keyframes typing {
 
     10%,
@@ -381,7 +353,7 @@ span {
     color: black;
 }
 
-.skill h2 {
+.skill h4 {
     margin-bottom: 5rem;
     color: white;
 }
@@ -395,7 +367,7 @@ span {
 
 .skill-box {
     background-color: var(--main-color);
-    height: 300px;
+    height: 325px;
     border-radius: 3rem;
     border: 5px solid transparent;
     cursor: pointer;
@@ -433,7 +405,7 @@ span {
     margin: auto;
 }
 
-//* project section */
+/* project section */
 .project {
     background: var(--second-bg-color);
 }
